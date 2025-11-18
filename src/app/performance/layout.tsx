@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/header";
+
 
 //页面文件sheet页显示
 export const metadata: Metadata = {
-  title: 'Home Page',
-  description: '主页面',
+  title: 'Performance Page',
+  description: 'Performance页面',
 }
  
 
@@ -16,12 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
       <body className={`antialiased`}>
-      {/* 添加header头，将header组件添加到layout.tsx中 */}
-      <Header/>
+      
         {children}
       </body>
-    </html>
   );
 }
